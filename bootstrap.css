@@ -946,7 +946,6 @@ video {
 
 svg {
   vertical-align: middle;
-  overflow: hidden;
 }
 
 a {
@@ -7883,44 +7882,6 @@ textarea[resize="horizontal"] {
 .form-color-sm label {
   width: 1.25rem;
   height: 1.25rem;
-}
-
-.icon {
-  --x-size: 3rem;
-  font-size: calc(var(--x-size) / 1.75);
-  line-height: 1;
-}
-
-.icon svg {
-  width: 1em;
-  height: 1em;
-}
-
-.icon-xl {
-  --x-size: 5rem;
-}
-
-.icon-lg {
-  --x-size: 4rem;
-}
-
-.icon-sm {
-  --x-size: 2rem;
-}
-
-.icon-xs {
-  --x-size: 1.25rem;
-}
-
-.icon-shape {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 0.75rem;
-  width: var(--x-size);
-  height: var(--x-size);
 }
 
 .img-fluid {

@@ -432,8 +432,6 @@ mark {
   display: inline-block;
   fill: currentColor;
   vertical-align: -0.125em;
-  width: 1em;
-  height: 1em;
 }
 
 .is-scrolled .header__search .form-control.search-input {
