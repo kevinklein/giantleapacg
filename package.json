@@ -1,0 +1,11 @@
+{
+  "name": "giantleap-prototypes",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node --watch build.js"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

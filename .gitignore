@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+
+# Font Awesome Pro (licensed — install locally, do not publish)
+fontawesome-pro-7.1.0-web/
+
+# duplicate / scratch
+index copy.html
+
+# OS
+.DS_Store
+Thumbs.db

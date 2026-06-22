@@ -1,0 +1,25 @@
+{
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "editor.rulers": [80],
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSaveTimeout": 120000,
+  "editor.largeFileOptimizations": false,
+  "css.format.enable": true,
+  "prettier.enable": true,
+  "prettier.requireConfig": false,
+  "prettier.prettierPath": "./node_modules/prettier",
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
