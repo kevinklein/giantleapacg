@@ -3,9 +3,11 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
-    "watch": "node --watch build.js"
+    "watch": "node watch.js",
+    "dev": "node dev.js"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.3",
     "prettier": "^3.6.2"
   }
 }

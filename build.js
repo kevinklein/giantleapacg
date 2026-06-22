@@ -5,7 +5,6 @@ const path = require("path");
 const ROOT = __dirname;
 const INCLUDES_DIR = path.join(ROOT, "_includes");
 const PAGES_DIR = path.join(ROOT, "src", "pages");
-const FA_SPRITES_DIR = path.join(ROOT, "fontawesome-pro-7.1.0-web", "sprites");
 const SPRITES_DIR = path.join(ROOT, "sprites");
 const SHARP_SPRITES = [
   "sharp-solid.svg",
@@ -33,19 +32,14 @@ function readInclude(name) {
   return fs.readFileSync(path.join(INCLUDES_DIR, name), "utf8");
 }
 
-function syncSprites() {
-  fs.mkdirSync(SPRITES_DIR, { recursive: true });
-
+function ensureSprites() {
   for (const file of SHARP_SPRITES) {
-    const source = path.join(FA_SPRITES_DIR, file);
-    const destination = path.join(SPRITES_DIR, file);
+    const spritePath = path.join(SPRITES_DIR, file);
 
-    if (!fs.existsSync(source)) {
-      console.error(`Missing Font Awesome sprite: ${source}`);
+    if (!fs.existsSync(spritePath)) {
+      console.error(`Missing sprite: ${spritePath}`);
       process.exit(1);
     }
-
-    fs.copyFileSync(source, destination);
   }
 }
 
@@ -137,7 +131,7 @@ function buildPage(filePath) {
 }
 
 function main() {
-  syncSprites();
+  ensureSprites();
   buildIconManifest();
 
   if (!fs.existsSync(PAGES_DIR)) {

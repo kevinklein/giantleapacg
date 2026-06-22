@@ -110,11 +110,11 @@
   --x-border-style: solid;
   --x-border-color: #e5e5e5;
   --x-border-color-translucent: color-mix(in srgb, #e5e5e5 70%, transparent);
-  --x-border-radius: 0.75rem;
-  --x-border-radius-sm: 0.5rem;
-  --x-border-radius-lg: 1rem;
-  --x-border-radius-xl: 1.5rem;
-  --x-border-radius-xxl: 2rem;
+  --x-border-radius: 0.5rem;
+  --x-border-radius-sm: 0.25rem;
+  --x-border-radius-lg: .75rem;
+  --x-border-radius-xl: 1rem;
+  --x-border-radius-xxl: 1.25rem;
   --x-border-radius-2xl: var(--x-border-radius-xxl);
   --x-border-radius-pill: 50rem;
   --x-box-shadow: box-shadow-2;
@@ -10946,53 +10946,6 @@ textarea[resize="horizontal"] {
     --x-w-xxl: 0px;
     width: calc(100vw - var(--x-w-xxl));
   }
-}
-
-.apexcharts-tooltip,
-.apexcharts-xaxistooltip,
-.apexcharts-yaxistooltip {
-  --x-popover-bg: #fff;
-  --x-popover-border-width: 1px;
-  --x-popover-border-color: rgba(0, 0, 0, 0.05);
-  --x-popover-border-radius: 1rem;
-  --x-popover-box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.2);
-  --x-popover-header-padding-x: 0.75rem;
-  --x-popover-header-padding-y: 0.75rem;
-  --x-popover-header-color: #171717;
-  --x-popover-header-bg: #fff;
-  --x-popover-body-padding-x: 0.75rem;
-  --x-popover-body-padding-y: 0.75rem;
-  --x-popover-body-color: var(--x-body-color);
-  background: var(--x-popover-bg) !important;
-  font-weight: 400 !important;
-  box-shadow: var(--x-popover-box-shadow) !important;
-  border-radius: var(--x-popover-border-radius) !important;
-  border: var(--x-popover-border-width) solid var(--x-popover-border-color) !important;
-}
-
-.apexcharts-tooltip-title {
-  font-weight: 500;
-  background: var(--x-popover-header-bg) !important;
-  color: var(--x-popover-header-color);
-  border-bottom: 1px solid var(--x-popover-border-color) !important;
-  padding: var(--x-popover-header-padding-y) var(--x-popover-header-padding-x);
-}
-
-.apexcharts-xaxistooltip,
-.apexcharts-yaxistooltip {
-  border-radius: 4px !important;
-}
-
-.apexcharts-legend {
-  gap: 10px;
-}
-
-.apexcharts-legend-series {
-  gap: 2px;
-}
-
-.apexcharts-legend-marker {
-  border-radius: 3px !important;
 }
 
 .align-baseline {
